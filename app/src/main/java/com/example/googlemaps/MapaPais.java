@@ -92,5 +92,4 @@ public class MapaPais extends AppCompatActivity implements Asynchtask, OnMapRead
         figura.strokeColor(Color.RED);
         mapa.addPolygon(figura);
     }
-
 }
