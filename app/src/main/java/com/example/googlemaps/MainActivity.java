@@ -30,12 +30,10 @@ public class MainActivity extends AppCompatActivity implements Asynchtask, Adapt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         listView = (ListView)findViewById(R.id.lvPaises);
         Map<String, String> datos = new HashMap<String, String>();
         WebService ws= new WebService("http://www.geognos.com/api/en/countries/info/all.json", datos, MainActivity.this, MainActivity.this  );
         ws.execute();
-
         listView.setOnItemClickListener(this);
     }
 
