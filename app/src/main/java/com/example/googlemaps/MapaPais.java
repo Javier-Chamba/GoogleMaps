@@ -54,8 +54,6 @@ public class MapaPais extends AppCompatActivity implements Asynchtask, OnMapRead
         Glide.with(this).load("http://www.geognos.com/api/en/countries/flag/"+bundle.getString("iso2")+".png").into(ivbandera);
     }
 
-
-
     @Override
     public void processFinish(String result) throws JSONException {
         Log.i("processFinish",result);
