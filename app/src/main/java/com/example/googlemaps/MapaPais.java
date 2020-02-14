@@ -32,8 +32,8 @@ import WebServices.WebService;
 
 public class MapaPais extends AppCompatActivity implements Asynchtask, OnMapReadyCallback{
 
-    private ImageView ivbandera;
-    private TextView tvpais;
+    ImageView ivbandera;
+    TextView tvpais;
 
     GoogleMap mapa;
     String oeste, este, norte, sur;
