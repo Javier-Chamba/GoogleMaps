@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
+    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +23,7 @@
         </activity>
         <meta-data
         android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyD9C2XuS6fLgNii1uu64p8wgAm6N7TDQC4"/>
+        android:value=""/>
     </application>
 
 
