@@ -43,10 +43,8 @@ public class MapaPais extends AppCompatActivity implements Asynchtask, OnMapRead
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapa_pais);
-
         ivbandera = findViewById(R.id.ivBandera);
         tvpais = findViewById(R.id.tvPais);
-
         Bundle bundle = this.getIntent().getExtras();
         Map<String, String> datos = new HashMap<String, String>();
         WebService ws= new WebService("http://www.geognos.com/api/en/countries/info/"+bundle.getString("iso2")+".json", datos, MapaPais.this, MapaPais.this  );
