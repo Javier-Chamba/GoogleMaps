@@ -72,7 +72,6 @@ public class MapaPais extends AppCompatActivity implements Asynchtask, OnMapRead
         longitud=punto.getDouble(1);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
     }
 
     @Override
